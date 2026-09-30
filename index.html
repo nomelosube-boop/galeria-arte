@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La Creación de Adán - Galería</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; transition: background-color 0.3s, color 0.3s; }
+    header { background-color: #2980b9; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+    
+    .menu-botones a, .btn-extra {
+      display: inline-block;
+      padding: 8px 12px;
+      margin-right: 5px;
+      background-color: white;
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .menu-botones a:hover, .btn-extra:hover { background-color: #f0f0f0; }
+    
+    .logo-container img { width: 300px; height: auto; }
+    
+    .contenedor { display: flex; min-height: 350px; }
+    
+    .publicidad {
+      background-color: #ffeaa7;
+      color: #d63031;
+      width: 20%;
+      padding: 15px;
+      border-right: 2px dashed #fdcb6e;
+      text-align: center;
+    }
+    .publicidad-box {
+      border: 2px dashed #d63031;
+      padding: 15px;
+      margin-top: 10px;
+      background-color: #fff;
+    }
+
+    aside { background-color: #f2f2f2; width: 25%; padding: 15px; transition: background-color 0.3s, color 0.3s; }
+    main { background-color: #8e2a2a; color: white; width: 55%; padding: 15px; }
+    footer { background-color: #ddd; padding: 10px; text-align: center; transition: background-color 0.3s, color 0.3s; }
+
+    /* ESTILOS DEL MODO OSCURO (LA CEREZA DEL PASTEL) */
+    body.modo-oscuro { background-color: #121212; color: #ffffff; }
+    body.modo-oscuro aside { background-color: #1e1e1e; color: #ffffff; }
+    body.modo-oscuro footer { background-color: #1a1a1a; color: #aaaaaa; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>La Creación de Adán</h1>
+      <p>Exposición de Arte - Obra 1</p>
+      
+      <div class="menu-botones">
+        <a href="monalisa.html">Ir a La Gioconda</a>
+        <a href="nocheestrellada.html">Ir a La Noche Estrellada</a>
+        <!-- EL BOTÓN QUE DA EL TOCAZO FINAL -->
+        <button class="btn-extra" onclick="cambiarModoOscuro()">🌙 Modo Oscuro</button>
+      </div>
+    </div>
+
+    <div class="logo-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrxq0A8YqFyeeVILZghz8qSbtjDb9adIWTfydyqEHYkQ&s=10" alt="La Creación de Adán">
+    </div>
+  </header>
+
+  <div class="contenedor">
+    <div class="publicidad">
+      <h3>📢 PUBLICIDAD</h3>
+      <div class="publicidad-box">
+        <p><strong>¡Pinceles Profesionales 50% OFF!</strong></p>
+        <p>Aprovecha el descuento especial para estudiantes de arte.</p>
+      </div>
+    </div>
+
+    <aside>
+      <h2>Ficha Técnica</h2>
+      <p><strong>Presentado por:</strong> Alejandro Betancourt Rosas</p>
+      <p><strong>Autor:</strong> Miguel Ángel</p>
+      <p><strong>Año:</strong> 1511</p>
+    </aside>
+
+    <main>
+      <h2>Obra Principal</h2>
+      <p>Esta es la obra emblemática de Miguel Ángel ubicada en la Capilla Sixtina. Representa el origen de la vida según la tradición bíblica.</p>
+    </main>
+  </div>
+
+  <footer>
+    Creado por Alejandro Betancourt Rosas
+  </footer>
+
+  <script>
+    function cambiarModoOscuro() {
+      document.body.classList.toggle('modo-oscuro');
+    }
+  </script>
+
+</body>
+</html>
